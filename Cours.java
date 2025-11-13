@@ -16,12 +16,17 @@ public class Cours {
     }
     public void ajouterEtudiant(Student e){
         students.add(e);
+
     }
     public void assignerInstructeur(Instructeur i){
         this.i=i;
     }
     public void afficherDetails(){
-
+        System.out.println("Cours id: "+coursId);
+        System.out.println("Title: "+title);
+        System.out.println("Description: "+description);
+        System.out.print("Instructeur :"+i.nom);
+        System.out.println("\nStudents:");
         for( Student s: students){
             System.out.println(s);
         }

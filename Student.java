@@ -17,6 +17,7 @@ public class Student {
 
     public void inscrire(Cours c){
         courses.add(c);
+        c.ajouterEtudiant(this);
     }
 
 
